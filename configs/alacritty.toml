@@ -1,0 +1,15 @@
+[colors.primary]
+background = "#1e2430"
+bright_foreground = "#8fbcbb"
+dim_foreground = "#5e81ac"
+foreground = "#88c0d0"
+
+[font]
+size = 10.0
+
+[font.normal]
+family = "JetBrainsMonoNFM"
+
+[window]
+opacity = 1.0
+startup_mode = 'Maximized'
