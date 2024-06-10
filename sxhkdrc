@@ -1,6 +1,5 @@
 super + Return
-  st
-  #alacritty --config-file configs/alacritty.toml
+  alacritty --config-file configs/alacritty.toml
 
 super + @period
   rofimoji
@@ -10,7 +9,8 @@ super + @space
 # dmenu_run -fn 'JetBrainsMonoNFM Thin-15' -b -p 'Open: '
 
 super + e
-  thunar
+  nautilus
+  #thunar
 
 super + d
   while bspc node any.hidden.window -g hidden=off; do false; done && while bspc node 'any.!hidden.window' -g hidden=on; do :; done
@@ -74,8 +74,14 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-super + {Tab,grave}
-  bspc {node,desktop} -f last
+super + Tab
+  rofi -show window -theme configs/rofi.rasi
+
+alt + Tab
+  bspc node -f last
+
+super + grave
+  bspc desktop -f last
 
 # focus the older or newer node in the focus history
 super + {o,i}
