@@ -25,7 +25,7 @@ bspc config focus_follows_pointer true
 feh --no-fehbg --bg-fill wallpapers/wallpaper10.png
 picom --config configs/picom.conf &
 polybar -c configs/polybar.ini &
-#flatpak run io.github.jeffshee.Hidamari &
+flatpak run io.github.jeffshee.Hidamari &
 #ibus-daemon --xim --replace & disown
 #ibus start & disown > /home/kachi/Videos/hehe
 

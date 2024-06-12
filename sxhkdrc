@@ -5,7 +5,7 @@ super + @period
   rofimoji
 
 super + @space
-  rofi -show drun -theme configs/rofi.rasi
+  rofi -show drun -theme configs/rofi-theme.rasi
 # dmenu_run -fn 'JetBrainsMonoNFM Thin-15' -b -p 'Open: '
 
 super + e
@@ -75,7 +75,7 @@ super + bracket{left,right}
 
 # focus the last node/desktop
 super + Tab
-  rofi -show window -theme configs/rofi.rasi
+  rofi -show window -theme configs/rofi-theme.rasi -config configs/rofi-conf.rasi
 
 alt + Tab
   bspc node -f last

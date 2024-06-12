@@ -11,6 +11,7 @@ configuration {
     drun-display-format:            "{name}";
     disable-history:                false;
 	sidebar-mode: 					false;
+
 }
 
 * {
@@ -128,3 +129,5 @@ element selected {
     border-radius:                  15px;
     border-color:                  	@accent;
 }
+
+
