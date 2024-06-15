@@ -1,5 +1,5 @@
 super + Return
-  alacritty --config-file configs/alacritty.toml
+  alacritty --config-file configs/alacritty.toml --working-directory ~
 
 super + @period
   rofimoji
