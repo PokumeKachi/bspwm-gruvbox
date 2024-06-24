@@ -1,0 +1,1339 @@
+2024-06-20 13:49:50.401 INFO log test start----------------------------------------------------------------------------------->
+2024-06-20 13:49:50.401 INFO log test end ----------------------------------------------------------------------------------------
+2024-06-20 13:49:50.402 INFO HnUsb ctx=0x7424486de4f8, path=0x7424486de730
+2024-06-20 13:49:50.402 INFO HnUsb ctx=0x7424486dfb50, path=0x7424486dfd88
+2024-06-20 13:49:50.402 INFO HnUsb ctx=0x7424486e11a8, path=0x7424486e13e0
+2024-06-20 13:49:50.403 INFO Load tabletsession dll _dll= 0x61c872b87490 
+
+2024-06-20 13:49:50.403 INFO load tabletsession OK 
+2024-06-20 13:49:50.406 INFO hnuc_dll_load ld = 72b8acd0
+2024-06-20 13:49:50.406 INFO after load dll
+2024-06-20 13:49:50.406 ERROR Cannot get tty state
+2024-06-20 13:49:50.406 INFO Open uhid-cdev /dev/uhid
+2024-06-20 13:49:50.417 INFO Create uhid device
+2024-06-20 13:49:50.417 INFO creat uhid dev success!
+2024-06-20 13:49:50.417 INFO create device ret = 0
+2024-06-20 13:49:50.417 ERROR Cannot get tty state
+2024-06-20 13:49:50.417 INFO Open uhid-cdev /dev/uhid
+2024-06-20 13:49:50.417 INFO Create uhid device
+2024-06-20 13:49:50.417 INFO creat uhid dev success!
+2024-06-20 13:49:50.417 INFO create device ret = 0
+2024-06-20 13:49:50.432 INFO create uinput pen  fd=8
+2024-06-20 13:49:50.432 INFO EXIT_SUCCESS *pFd=8
+2024-06-20 13:49:50.433 INFO /dev/input/event6
+2024-06-20 13:49:50.433 INFO     evdev version: 1.0.1
+2024-06-20 13:49:50.433 INFO     name: HUION Huion Tablet
+2024-06-20 13:49:50.433 INFO     features:
+2024-06-20 13:49:50.464 INFO init event OK
+2024-06-20 13:49:50.465 INFO Destroy uhid device
+2024-06-20 13:49:50.465 ERROR Wrong size written to uhid: 4368 != 8
+2024-06-20 13:49:50.465 ERROR destroy uhid dev error!
+2024-06-20 13:49:50.465 INFO --> remove@/devices/virtual/input/input21/event19
+
+2024-06-20 13:49:50.488 INFO --> remove@/devices/virtual/input/input21/mouse4
+
+2024-06-20 13:49:50.508 INFO --> remove@/devices/virtual/input/input21
+
+2024-06-20 13:49:50.508 INFO create uinput pen  fd=8
+2024-06-20 13:49:50.508 INFO --> add@/devices/virtual/input/input24
+
+2024-06-20 13:49:50.508 INFO --> add@/devices/virtual/input/input24/event19
+
+2024-06-20 13:49:50.508 INFO EXIT_SUCCESS *pFd=8
+2024-06-20 13:49:50.510 INFO --> add@/devices/virtual/input/input24/mouse4
+
+2024-06-20 13:49:51.324 INFO on_screen_changed huion_reload_uhid_pen_event
+2024-06-20 13:49:51.324 INFO Destroy uhid device
+2024-06-20 13:49:51.324 ERROR Wrong size written to uhid: 4368 != 8
+2024-06-20 13:49:51.324 ERROR destroy uhid dev error!
+2024-06-20 13:49:51.325 INFO --> remove@/devices/virtual/input/input24/event19
+
+2024-06-20 13:49:51.354 INFO --> remove@/devices/virtual/input/input24/mouse4
+
+2024-06-20 13:49:51.371 INFO --> remove@/devices/virtual/input/input24
+
+2024-06-20 13:49:51.371 INFO create uinput pen  fd=8
+2024-06-20 13:49:51.371 INFO --> add@/devices/virtual/input/input25
+
+2024-06-20 13:49:51.371 INFO --> add@/devices/virtual/input/input25/event19
+
+2024-06-20 13:49:51.371 INFO EXIT_SUCCESS *pFd=8
+2024-06-20 13:49:51.371 INFO on_screen_changed on_screen_changed on_screen_changed
+2024-06-20 13:49:51.371 INFO --> add@/devices/virtual/input/input25/mouse4
+
+2024-06-20 13:49:51.463 INFO On Timer TIMER_ID_DETECT_DEVICE 0 
+
+2024-06-20 13:49:51.587 INFO Device Found
+  type: 256c 0064
+  path: 0002:0003:00
+  serial_number: 
+  Manufacturer: HUION
+  Product:      Huion Tablet
+  Release:      111
+  Interface:    0
+2024-06-20 13:49:51.587 INFO found 9580 100,path=0002:0003:00
+2024-06-20 13:49:51.589 INFO  ** REV HNMC_CORE_BLZ_ON 6001 
+
+2024-06-20 13:49:51.589 INFO RUN tablet_thread, Count =0
+
+2024-06-20 13:49:51.590 INFO Thread::threadFunc(72bd2e70) 3be006c0 begin
+2024-06-20 13:49:51.590 INFO open param->tspfFlag =0 
+2024-06-20 13:49:51.590 INFO HnTabletSession::close() _protocol=0
+2024-06-20 13:49:51.590 INFO  _context.idClient=0x61c872bd2f20 
+2024-06-20 13:49:51.701 INFO Device Found
+  type: 256c 0064
+  path: 0002:0003:00
+  serial_number: 
+  Manufacturer: HUION
+  Product:      Huion Tablet
+  Release:      111
+  Interface:    0
+2024-06-20 13:49:51.701 INFO Device Found
+  type: 256c 0064
+  path: 0002:0003:01
+  serial_number: 
+  Manufacturer: HUION
+  Product:      Huion Tablet
+  Release:      111
+  Interface:    1
+2024-06-20 13:49:51.701 INFO start blue tooth 
+ 
+2024-06-20 13:49:51.701 INFO --------->> HnBluetooth::open() invoked -------------
+2024-06-20 13:49:51.701 INFO open ble
+
+2024-06-20 13:49:51.702 NOTICE blz_init false
+2024-06-20 13:49:51.702 INFO HnTabletSession::open() bluetooth open faild, end
+
+2024-06-20 13:49:51.702 INFO HnThread::start(0x61c84cfec8c1) pid=127699182823232
+2024-06-20 13:49:51.702 INFO HnThread::threadFunc 3be006c0 end
+2024-06-20 13:49:52.703 INFO Thread::threadFunc(72bd22a0) 3b4006c0 begin
+2024-06-20 13:49:52.703 INFO open param->tspfFlag =0 
+2024-06-20 13:49:52.703 INFO HnTabletSession::close() _protocol=0
+2024-06-20 13:49:52.703 INFO  _context.idClient=0x61c872bd2350 
+2024-06-20 13:49:52.805 INFO Device Found
+  type: 256c 0064
+  path: 0002:0003:00
+  serial_number: 
+  Manufacturer: HUION
+  Product:      Huion Tablet
+  Release:      111
+  Interface:    0
+2024-06-20 13:49:52.805 INFO Device Found
+  type: 256c 0064
+  path: 0002:0003:01
+  serial_number: 
+  Manufacturer: HUION
+  Product:      Huion Tablet
+  Release:      111
+  Interface:    1
+2024-06-20 13:49:52.805 INFO start blue tooth 
+ 
+2024-06-20 13:49:52.805 INFO --------->> HnBluetooth::open() invoked -------------
+2024-06-20 13:49:52.805 INFO open ble
+
+2024-06-20 13:49:52.805 NOTICE blz_init false
+2024-06-20 13:49:52.805 INFO HnTabletSession::open() bluetooth open faild, end
+
+2024-06-20 13:49:52.806 INFO HnThread::start(0x61c84cfec8c1) pid=127699182823232
+2024-06-20 13:49:52.806 INFO HnThread::threadFunc 3b4006c0 end
+2024-06-20 13:49:53.807 INFO Thread::threadFunc(72bd1d50) 3aa006c0 begin
+2024-06-20 13:49:53.807 INFO open param->tspfFlag =0 
+2024-06-20 13:49:53.807 INFO HnTabletSession::close() _protocol=0
+2024-06-20 13:49:53.807 INFO  _context.idClient=0x61c872bd1e00 
+2024-06-20 13:49:53.913 INFO Device Found
+  type: 256c 0064
+  path: 0002:0003:00
+  serial_number: 
+  Manufacturer: HUION
+  Product:      Huion Tablet
+  Release:      111
+  Interface:    0
+2024-06-20 13:49:53.913 INFO Device Found
+  type: 256c 0064
+  path: 0002:0003:01
+  serial_number: 
+  Manufacturer: HUION
+  Product:      Huion Tablet
+  Release:      111
+  Interface:    1
+2024-06-20 13:49:53.913 INFO start blue tooth 
+ 
+2024-06-20 13:49:53.913 INFO --------->> HnBluetooth::open() invoked -------------
+2024-06-20 13:49:53.913 INFO open ble
+
+2024-06-20 13:49:53.914 NOTICE blz_init false
+2024-06-20 13:49:53.914 INFO HnTabletSession::open() bluetooth open faild, end
+
+2024-06-20 13:49:53.914 INFO HnThread::start(0x61c84cfec8c1) pid=127699182823232
+2024-06-20 13:49:53.914 INFO HnThread::threadFunc 3aa006c0 end
+2024-06-20 13:49:54.914 INFO RUN tablet_thread, Count =0
+
+2024-06-20 13:49:54.914 INFO HnThread::waitQuit() WaitForSingleObject(486e2740, )
+2024-06-20 13:49:54.914 INFO HnThread::waitQuit() end
+2024-06-20 13:49:54.915 INFO Thread::threadFunc(72bd2e70) 3be006c0 begin
+2024-06-20 13:49:54.915 INFO open param->tspfFlag =0 
+2024-06-20 13:49:54.915 INFO HnTabletSession::close() _protocol=0
+2024-06-20 13:49:54.915 INFO  _context.idClient=0x61c872bd2f20 
+2024-06-20 13:49:55.017 INFO Device Found
+  type: 256c 0064
+  path: 0002:0003:00
+  serial_number: 
+  Manufacturer: HUION
+  Product:      Huion Tablet
+  Release:      111
+  Interface:    0
+2024-06-20 13:49:55.017 INFO Device Found
+  type: 256c 0064
+  path: 0002:0003:01
+  serial_number: 
+  Manufacturer: HUION
+  Product:      Huion Tablet
+  Release:      111
+  Interface:    1
+2024-06-20 13:49:55.017 INFO start blue tooth 
+ 
+2024-06-20 13:49:55.017 INFO --------->> HnBluetooth::open() invoked -------------
+2024-06-20 13:49:55.017 INFO open ble
+
+2024-06-20 13:49:55.018 NOTICE blz_init false
+2024-06-20 13:49:55.018 INFO HnTabletSession::open() bluetooth open faild, end
+
+2024-06-20 13:49:55.018 INFO HnThread::start(0x61c84cfec8c1) pid=127699182823232
+2024-06-20 13:49:55.018 INFO HnThread::threadFunc 3be006c0 end
+2024-06-20 13:49:56.018 INFO HnThread::waitQuit() WaitForSingleObject(486e2740, )
+2024-06-20 13:49:56.018 INFO HnThread::waitQuit() end
+2024-06-20 13:49:56.019 INFO Thread::threadFunc(72bd22a0) 3b4006c0 begin
+2024-06-20 13:49:56.019 INFO open param->tspfFlag =0 
+2024-06-20 13:49:56.019 INFO HnTabletSession::close() _protocol=0
+2024-06-20 13:49:56.019 INFO  _context.idClient=0x61c872bd2350 
+2024-06-20 13:49:56.126 INFO Device Found
+  type: 256c 0064
+  path: 0002:0003:00
+  serial_number: 
+  Manufacturer: HUION
+  Product:      Huion Tablet
+  Release:      111
+  Interface:    0
+2024-06-20 13:49:56.126 INFO Device Found
+  type: 256c 0064
+  path: 0002:0003:01
+  serial_number: 
+  Manufacturer: HUION
+  Product:      Huion Tablet
+  Release:      111
+  Interface:    1
+2024-06-20 13:49:56.126 INFO start blue tooth 
+ 
+2024-06-20 13:49:56.126 INFO --------->> HnBluetooth::open() invoked -------------
+2024-06-20 13:49:56.126 INFO open ble
+
+2024-06-20 13:49:56.127 NOTICE blz_init false
+2024-06-20 13:49:56.127 INFO HnTabletSession::open() bluetooth open faild, end
+
+2024-06-20 13:49:56.127 INFO HnThread::start(0x61c84cfec8c1) pid=127699182823232
+2024-06-20 13:49:56.127 INFO HnThread::threadFunc 3b4006c0 end
+2024-06-20 13:49:57.127 INFO HnThread::waitQuit() WaitForSingleObject(486e2740, )
+2024-06-20 13:49:57.128 INFO HnThread::waitQuit() end
+2024-06-20 13:49:57.129 INFO Thread::threadFunc(72bd1d50) 3aa006c0 begin
+2024-06-20 13:49:57.129 INFO open param->tspfFlag =0 
+2024-06-20 13:49:57.129 INFO HnTabletSession::close() _protocol=0
+2024-06-20 13:49:57.129 INFO  _context.idClient=0x61c872bd1e00 
+2024-06-20 13:49:57.240 INFO Device Found
+  type: 256c 0064
+  path: 0002:0003:00
+  serial_number: 
+  Manufacturer: HUION
+  Product:      Huion Tablet
+  Release:      111
+  Interface:    0
+2024-06-20 13:49:57.240 INFO Device Found
+  type: 256c 0064
+  path: 0002:0003:01
+  serial_number: 
+  Manufacturer: HUION
+  Product:      Huion Tablet
+  Release:      111
+  Interface:    1
+2024-06-20 13:49:57.240 INFO start blue tooth 
+ 
+2024-06-20 13:49:57.240 INFO --------->> HnBluetooth::open() invoked -------------
+2024-06-20 13:49:57.240 INFO open ble
+
+2024-06-20 13:49:57.240 NOTICE blz_init false
+2024-06-20 13:49:57.240 INFO HnTabletSession::open() bluetooth open faild, end
+
+2024-06-20 13:49:57.241 INFO HnThread::start(0x61c84cfec8c1) pid=127699182823232
+2024-06-20 13:49:57.241 INFO HnThread::threadFunc 3aa006c0 end
+2024-06-20 13:49:58.241 INFO detect huion_blz_device start:
+2024-06-20 13:50:15.129 INFO --> add@/devices/virtual/bdi/0:49
+
+2024-06-20 13:55:49.909 INFO --> change@/devices/platform/regulatory.0
+
+2024-06-20 13:55:53.231 INFO --> change@/devices/platform/regulatory.0
+
+2024-06-20 13:55:56.431 INFO --> change@/devices/platform/regulatory.0
+
+2024-06-20 13:55:59.631 INFO --> change@/devices/platform/regulatory.0
+
+2024-06-20 13:56:02.832 INFO --> change@/devices/platform/regulatory.0
+
+2024-06-20 13:56:06.031 INFO --> change@/devices/platform/regulatory.0
+
+2024-06-20 13:56:09.234 INFO --> change@/devices/platform/regulatory.0
+
+2024-06-20 13:56:12.437 INFO --> change@/devices/platform/regulatory.0
+
+2024-06-20 13:56:15.645 INFO --> change@/devices/platform/regulatory.0
+
+2024-06-20 13:56:18.832 INFO --> change@/devices/platform/regulatory.0
+
+2024-06-20 13:56:22.031 INFO --> change@/devices/platform/regulatory.0
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXCPU:00
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXCPU:01
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXCPU:02
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXCPU:03
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXCPU:04
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXCPU:05
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXCPU:06
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXCPU:07
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXPWRBN:00
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXPWRBN:00/wakeup/wakeup17
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXSYBUS:00
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/device:00
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/device:00/wakeup/wakeup0
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/wakeup/wakeup1
+
+2024-06-20 13:56:55.082 INFO --> change@/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00
+
+2024-06-20 13:56:55.084 INFO --> change@/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00
+
+2024-06-20 13:56:55.084 INFO --> change@/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/device:01
+
+2024-06-20 13:56:55.084 INFO --> change@/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/device:02
+
+2024-06-20 13:56:55.097 INFO --> change@/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:09/PNP0C09:00/PNP0C0A:00/power_supply/BAT0
+
+2024-06-20 13:56:55.097 INFO --> change@/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:09/PNP0C09:00/PNP0C0A:00/power_supply/BAT0/hwmon2
+
+2024-06-20 13:56:55.097 INFO --> change@/devices/pci0000:00/0000:00:1d.0/usb2/2-0:1.0
+
+2024-06-20 13:56:55.097 INFO --> change@/devices/pci0000:00/0000:00:1d.0/usb2/2-1
+
+2024-06-20 13:56:55.097 INFO --> change@/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2
+
+2024-06-20 13:56:55.097 INFO --> change@/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.0
+
+2024-06-20 13:56:55.097 INFO --> change@/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.0/0003:256C:0064.0001
+
+2024-06-20 13:56:55.097 INFO --> change@/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.0/0003:256C:0064.0001/hidraw/hidraw0
+
+2024-06-20 13:56:55.097 INFO --> change@/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.0/usbmisc/hiddev0
+
+2024-06-20 13:56:55.098 INFO --> change@/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.1
+
+2024-06-20 13:56:55.098 INFO --> change@/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.1/0003:256C:0064.0002
+
+2024-06-20 13:56:55.098 INFO --> change@/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.1/0003:256C:0064.0002/hidraw/hidraw1
+
+2024-06-20 13:56:55.098 INFO --> change@/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.1/0003:256C:0064.0002/input/input7
+
+2024-06-20 13:56:55.098 INFO --> change@/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.1/0003:256C:0064.0002/input/input7/event6
+
+2024-06-20 13:56:55.098 INFO --> change@/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.1/0003:256C:0064.0002/input/input7/mouse0
+
+2024-06-20 13:56:55.098 INFO --> change@/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1:1.0
+
+2024-06-20 13:56:55.098 INFO --> change@/devices/pci0000:00/0000:00:1d.0/wakeup/wakeup26
+
+2024-06-20 13:56:55.098 INFO --> change@/devices/pci0000:00/0000:00:1e.0
+
+2024-06-20 13:56:55.098 INFO --> change@/devices/pci0000:00/0000:00:1e.0/pci_bus/0000:0e
+
+2024-06-20 13:56:55.098 INFO --> change@/devices/pci0000:00/0000:00:1f.0
+
+2024-06-20 13:56:55.098 INFO --> change@/devices/pci0000:00/0000:00:1f.0/PNP0103:00
+
+2024-06-20 13:56:55.098 INFO --> change@/devices/pci0000:00/0000:00:1f.0/PNP0800:00
+
+2024-06-20 13:56:55.099 INFO --> change@/devices/pci0000:00/0000:00:1f.0/PNP0C04:00
+
+2024-06-20 13:56:55.099 INFO --> change@/devices/pci0000:00/0000:00:1f.0/PNP0C09:00
+
+2024-06-20 13:56:55.099 INFO --> change@/devices/pci0000:00/0000:00:1f.0/PNP0C09:00/ACPI0003:00
+
+2024-06-20 13:56:55.102 INFO --> change@/devices/pci0000:00/0000:00:1f.0/PNP0C09:00/ACPI0003:00/power_supply/AC
+
+2024-06-20 13:56:55.102 INFO --> change@/devices/pci0000:00/0000:00:1f.0/PNP0C09:00/ACPI0003:00/power_supply/AC/hwmon0
+
+2024-06-20 13:56:55.102 INFO --> change@/devices/pci0000:00/0000:00:1f.0/PNP0C09:00/ACPI0003:00/power_supply/AC/wakeup21
+
+2024-06-20 13:56:55.102 INFO --> change@/devices/pci0000:00/0000:00:1f.0/PNP0C09:00/IBM0068:00
+
+2024-06-20 13:56:55.102 INFO --> change@/devices/pci0000:00/0000:00:1f.0/PNP0C09:00/PNP0C0A:00
+
+2024-06-20 13:56:55.102 INFO --> change@/devices/pci0000:00/0000:00:1f.0/iTCO_wdt.1.auto
+
+2024-06-20 13:56:55.102 INFO --> change@/devices/pci0000:00/0000:00:1f.0/iTCO_wdt.1.auto/watchdog/watchdog1
+
+2024-06-20 13:56:55.102 INFO --> change@/devices/pci0000:00/0000:00:1f.2
+
+2024-06-20 13:56:55.103 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata1/ata_port/ata1
+
+2024-06-20 13:56:55.103 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata1/host0
+
+2024-06-20 13:56:55.103 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata1/host0/scsi_host/host0
+
+2024-06-20 13:56:55.103 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0
+
+2024-06-20 13:56:55.103 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0/0:0:0:0
+
+2024-06-20 13:56:55.103 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0/0:0:0:0/block/sda
+
+2024-06-20 13:56:55.103 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0/0:0:0:0/block/sda/sda1
+
+2024-06-20 13:56:55.103 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0/0:0:0:0/block/sda/sda2
+
+2024-06-20 13:56:55.103 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0/0:0:0:0/block/sda/sda3
+
+2024-06-20 13:56:55.103 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0/0:0:0:0/bsg/0:0:0:0
+
+2024-06-20 13:56:55.103 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0/0:0:0:0/scsi_device/0:0:0:0
+
+2024-06-20 13:56:55.103 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0/0:0:0:0/scsi_disk/0:0:0:0
+
+2024-06-20 13:56:55.103 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata1/link1/ata_link/link1
+
+2024-06-20 13:56:55.104 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata1/link1/dev1.0/ata_device/dev1.0
+
+2024-06-20 13:56:55.104 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata2/ata_port/ata2
+
+2024-06-20 13:56:55.104 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata2/host1
+
+2024-06-20 13:56:55.104 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata2/host1/scsi_host/host1
+
+2024-06-20 13:56:55.104 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata2/host1/target1:0:0
+
+2024-06-20 13:56:55.104 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata2/host1/target1:0:0/1:0:0:0
+
+2024-06-20 13:56:55.104 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata2/host1/target1:0:0/1:0:0:0/block/sr0
+
+2024-06-20 13:56:55.104 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata2/host1/target1:0:0/1:0:0:0/bsg/1:0:0:0
+
+2024-06-20 13:56:55.104 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata2/host1/target1:0:0/1:0:0:0/scsi_device/1:0:0:0
+
+2024-06-20 13:56:55.104 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata2/link2/ata_link/link2
+
+2024-06-20 13:56:55.104 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata2/link2/dev2.0/ata_device/dev2.0
+
+2024-06-20 13:56:55.104 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata3/ata_port/ata3
+
+2024-06-20 13:56:55.104 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata3/host2
+
+2024-06-20 13:56:55.104 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata3/host2/scsi_host/host2
+
+2024-06-20 13:56:55.105 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata3/link3/ata_link/link3
+
+2024-06-20 13:56:55.105 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata3/link3/dev3.0/ata_device/dev3.0
+
+2024-06-20 13:56:55.105 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata4/ata_port/ata4
+
+2024-06-20 13:56:55.105 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata4/host3
+
+2024-06-20 13:56:55.105 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata4/host3/scsi_host/host3
+
+2024-06-20 13:56:55.105 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata4/link4/ata_link/link4
+
+2024-06-20 13:56:55.105 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata4/link4/dev4.0/ata_device/dev4.0
+
+2024-06-20 13:56:55.105 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata5/ata_port/ata5
+
+2024-06-20 13:56:55.105 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata5/host4
+
+2024-06-20 13:56:55.105 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata5/host4/scsi_host/host4
+
+2024-06-20 13:56:55.105 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata5/link5/ata_link/link5
+
+2024-06-20 13:56:55.105 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata5/link5/dev5.0/ata_device/dev5.0
+
+2024-06-20 13:56:55.105 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata6/ata_port/ata6
+
+2024-06-20 13:56:55.105 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata6/host5
+
+2024-06-20 13:56:55.106 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata6/host5/scsi_host/host5
+
+2024-06-20 13:56:55.106 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata6/link6/ata_link/link6
+
+2024-06-20 13:56:55.106 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata6/link6/dev6.0/ata_device/dev6.0
+
+2024-06-20 13:56:55.106 INFO --> change@/devices/pci0000:00/0000:00:1f.3
+
+2024-06-20 13:56:55.106 INFO --> change@/devices/pci0000:00/0000:00:1f.3/i2c-15
+
+2024-06-20 13:56:55.106 INFO --> change@/devices/pci0000:00/0000:00:1f.3/i2c-15/15-0019
+
+2024-06-20 13:56:55.106 INFO --> change@/devices/pci0000:00/0000:00:1f.3/i2c-15/15-0019/hwmon/hwmon5
+
+2024-06-20 13:56:55.106 INFO --> change@/devices/pci0000:00/0000:00:1f.3/i2c-15/15-0050
+
+2024-06-20 13:56:55.106 INFO --> change@/devices/pci0000:00/0000:00:1f.3/i2c-15/15-0050/15-00501
+
+2024-06-20 13:56:55.106 INFO --> change@/devices/pci0000:00/0000:00:1f.3/i2c-15/15-0051
+
+2024-06-20 13:56:55.106 INFO --> change@/devices/pci0000:00/0000:00:1f.3/i2c-15/15-0051/15-00512
+
+2024-06-20 13:56:55.106 INFO --> change@/devices/pci0000:00/PNP0C14:00
+
+2024-06-20 13:56:55.106 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00
+
+2024-06-20 13:56:55.106 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/028F5E3F-8853-45A5-8047-3D2462F5A734
+
+2024-06-20 13:56:55.107 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/05901221-D566-11D1-B2F0-00A0C9062910
+
+2024-06-20 13:56:55.107 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/309E63EE-EDB0-4FB6-9173-F680013E7311
+
+2024-06-20 13:56:55.107 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/3ADEBD0F-0C5F-46ED-AB2E-04962B4FDCBC
+
+2024-06-20 13:56:55.107 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/42848006-8886-490E-8C72-2BDCA93A8A09
+
+2024-06-20 13:56:55.107 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/4A5256AA-432C-4CAE-B49F-DCA707622BAD
+
+2024-06-20 13:56:55.107 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/53220266-2F55-4E18-9E9C-D08C6743D6FD
+
+2024-06-20 13:56:55.107 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/67961DCC-1683-4421-A154-68EDE0FF90D2
+
+2024-06-20 13:56:55.107 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/69A8E2C2-F522-463A-8908-C7E46539C8B1
+
+2024-06-20 13:56:55.107 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/85065954-8314-4A06-8BB4-CCAB45032E88
+
+2024-06-20 13:56:55.107 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/921A2F40-0DC4-402D-AC18-B48444EF9ED2
+
+2024-06-20 13:56:55.107 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/99D20A29-9350-4114-AA90-28F0EB83D308
+
+2024-06-20 13:56:55.107 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/A6D822F2-3A67-4DC7-AAD1-55502A6162E8
+
+2024-06-20 13:56:55.107 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/AF46A51B-5C23-4C43-9609-3CBB9553D5A5
+
+2024-06-20 13:56:55.108 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/B9AD7C5A-6FEF-484C-80D3-59A921736750
+
+2024-06-20 13:56:55.108 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/C12AD361-9FA9-4C74-901F-95CB0945CF3E
+
+2024-06-20 13:56:55.108 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/E06BDE62-EE75-48F4-A583-B23E69ABF891
+
+2024-06-20 13:56:55.108 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/EF4F3564-48C8-4894-85C8-B46C26B842C0
+
+2024-06-20 13:56:55.108 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/F6CB5C3C-9CAE-4EBD-B577-931EA32A2CC0
+
+2024-06-20 13:56:55.108 INFO --> change@/devices/pci0000:00/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/F7D5B5E9-CD93-4643-9898-A45B2F2AE3E5
+
+2024-06-20 13:56:55.108 INFO --> change@/devices/pci0000:00/pci_bus/0000:00
+
+2024-06-20 13:56:55.108 INFO --> change@/devices/pci0000:ff/0000:ff:00.0
+
+2024-06-20 13:56:55.108 INFO --> change@/devices/pci0000:ff/0000:ff:00.1
+
+2024-06-20 13:56:55.108 INFO --> change@/devices/pci0000:ff/0000:ff:02.0
+
+2024-06-20 13:56:55.108 INFO --> change@/devices/pci0000:ff/0000:ff:02.1
+
+2024-06-20 13:56:55.108 INFO --> change@/devices/pci0000:ff/0000:ff:02.2
+
+2024-06-20 13:56:55.108 INFO --> change@/devices/pci0000:ff/0000:ff:02.3
+
+2024-06-20 13:56:55.108 INFO --> change@/devices/pci0000:ff/pci_bus/0000:ff
+
+2024-06-20 13:56:55.109 INFO --> change@/devices/platform/PNP0C0D:00
+
+2024-06-20 13:56:55.109 INFO --> change@/devices/platform/PNP0C0E:00
+
+2024-06-20 13:56:55.109 INFO --> change@/devices/platform/PNP0C14:01
+
+2024-06-20 13:56:55.109 INFO --> change@/devices/platform/PNP0C14:01/wmi_bus/wmi_bus-PNP0C14:01
+
+2024-06-20 13:56:55.109 INFO --> change@/devices/platform/PNP0C14:01/wmi_bus/wmi_bus-PNP0C14:01/05901221-D566-11D1-B2F0-00A0C9062910-1
+
+2024-06-20 13:56:55.109 INFO --> change@/devices/platform/PNP0C14:01/wmi_bus/wmi_bus-PNP0C14:01/2651D9FD-911C-4B69-B94E-D0DED5963BD7
+
+2024-06-20 13:56:55.109 INFO --> change@/devices/platform/PNP0C14:01/wmi_bus/wmi_bus-PNP0C14:01/51F5230E-9677-46CD-A1CF-C0B23EE34DB7
+
+2024-06-20 13:56:55.109 INFO --> change@/devices/platform/PNP0C14:01/wmi_bus/wmi_bus-PNP0C14:01/6A4B54EF-A5ED-4D33-9455-B0D9B48DF4B3
+
+2024-06-20 13:56:55.109 INFO --> change@/devices/platform/PNP0C14:01/wmi_bus/wmi_bus-PNP0C14:01/74F1EBB6-927A-4C7D-95DF-698E21E80EB5
+
+2024-06-20 13:56:55.109 INFO --> change@/devices/platform/PNP0C14:01/wmi_bus/wmi_bus-PNP0C14:01/7EEF04FF-4328-447C-B5BB-D449925D538D
+
+2024-06-20 13:56:55.109 INFO --> change@/devices/platform/PNP0C14:01/wmi_bus/wmi_bus-PNP0C14:01/8ADB159E-1E32-455C-BC93-308A7ED98246
+
+2024-06-20 13:56:55.109 INFO --> change@/devices/platform/PNP0C14:01/wmi_bus/wmi_bus-PNP0C14:01/98479A64-33F5-4E33-A707-8E251EBBC3A1
+
+2024-06-20 13:56:55.109 INFO --> change@/devices/platform/acpi-cpufreq
+
+2024-06-20 13:56:55.109 INFO --> change@/devices/platform/coretemp.0
+
+2024-06-20 13:56:55.110 INFO --> change@/devices/platform/coretemp.0/hwmon/hwmon6
+
+2024-06-20 13:56:55.110 INFO --> change@/devices/platform/dock.0
+
+2024-06-20 13:56:55.110 INFO --> change@/devices/platform/dock.1
+
+2024-06-20 13:56:55.110 INFO --> change@/devices/platform/i8042
+
+2024-06-20 13:56:55.110 INFO --> change@/devices/platform/i8042/serio0
+
+2024-06-20 13:56:55.110 INFO --> change@/devices/platform/i8042/serio0/input/input5
+
+2024-06-20 13:56:55.110 INFO --> change@/devices/platform/i8042/serio0/input/input5/event5
+
+2024-06-20 13:56:55.110 INFO --> change@/devices/platform/i8042/serio0/input/input5/input5::capslock
+
+2024-06-20 13:56:55.110 INFO --> change@/devices/platform/i8042/serio0/input/input5/input5::numlock
+
+2024-06-20 13:56:55.110 INFO --> change@/devices/platform/i8042/serio0/input/input5/input5::scrolllock
+
+2024-06-20 13:56:55.110 INFO --> change@/devices/platform/i8042/serio1
+
+2024-06-20 13:56:55.110 INFO --> change@/devices/platform/i8042/serio1/input/input8
+
+2024-06-20 13:56:55.110 INFO --> change@/devices/platform/i8042/serio1/input/input8/event16
+
+2024-06-20 13:56:55.111 INFO --> change@/devices/platform/i8042/serio1/input/input8/mouse1
+
+2024-06-20 13:56:55.111 INFO --> change@/devices/platform/i8042/serio1/serio2
+
+2024-06-20 13:56:55.111 INFO --> change@/devices/platform/microcode
+
+2024-06-20 13:56:55.111 INFO --> change@/devices/platform/pcspkr
+
+2024-06-20 13:56:55.111 INFO --> change@/devices/platform/pcspkr/input/input9
+
+2024-06-20 13:56:55.111 INFO --> change@/devices/platform/pcspkr/input/input9/event7
+
+2024-06-20 13:56:55.111 INFO --> change@/devices/platform/reg-dummy
+
+2024-06-20 13:56:55.111 INFO --> change@/devices/platform/reg-dummy/regulator/regulator.0
+
+2024-06-20 13:56:55.111 INFO --> change@/devices/platform/regulatory.0
+
+2024-06-20 13:56:55.111 INFO --> change@/devices/platform/serial8250
+
+2024-06-20 13:56:55.111 INFO --> change@/devices/platform/serial8250/serial8250:0
+
+2024-06-20 13:56:55.111 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.0
+
+2024-06-20 13:56:55.111 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.0/tty/ttyS0
+
+2024-06-20 13:56:55.111 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.1
+
+2024-06-20 13:56:55.112 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.1/tty/ttyS1
+
+2024-06-20 13:56:55.112 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.10
+
+2024-06-20 13:56:55.112 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.10/tty/ttyS10
+
+2024-06-20 13:56:55.112 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.11
+
+2024-06-20 13:56:55.112 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.11/tty/ttyS11
+
+2024-06-20 13:56:55.112 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.12
+
+2024-06-20 13:56:55.112 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.12/tty/ttyS12
+
+2024-06-20 13:56:55.112 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.13
+
+2024-06-20 13:56:55.112 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.13/tty/ttyS13
+
+2024-06-20 13:56:55.112 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.14
+
+2024-06-20 13:56:55.112 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.14/tty/ttyS14
+
+2024-06-20 13:56:55.112 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.15
+
+2024-06-20 13:56:55.112 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.15/tty/ttyS15
+
+2024-06-20 13:56:55.112 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.16
+
+2024-06-20 13:56:55.113 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.16/tty/ttyS16
+
+2024-06-20 13:56:55.113 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.17
+
+2024-06-20 13:56:55.113 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.17/tty/ttyS17
+
+2024-06-20 13:56:55.113 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.18
+
+2024-06-20 13:56:55.113 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.18/tty/ttyS18
+
+2024-06-20 13:56:55.113 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.19
+
+2024-06-20 13:56:55.113 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.19/tty/ttyS19
+
+2024-06-20 13:56:55.113 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.2
+
+2024-06-20 13:56:55.113 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.2/tty/ttyS2
+
+2024-06-20 13:56:55.113 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.20
+
+2024-06-20 13:56:55.113 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.20/tty/ttyS20
+
+2024-06-20 13:56:55.113 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.21
+
+2024-06-20 13:56:55.113 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.21/tty/ttyS21
+
+2024-06-20 13:56:55.113 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.22
+
+2024-06-20 13:56:55.114 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.22/tty/ttyS22
+
+2024-06-20 13:56:55.114 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.23
+
+2024-06-20 13:56:55.114 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.23/tty/ttyS23
+
+2024-06-20 13:56:55.114 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.24
+
+2024-06-20 13:56:55.114 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.24/tty/ttyS24
+
+2024-06-20 13:56:55.114 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.25
+
+2024-06-20 13:56:55.114 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.25/tty/ttyS25
+
+2024-06-20 13:56:55.114 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.26
+
+2024-06-20 13:56:55.114 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.26/tty/ttyS26
+
+2024-06-20 13:56:55.114 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.27
+
+2024-06-20 13:56:55.114 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.27/tty/ttyS27
+
+2024-06-20 13:56:55.114 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.28
+
+2024-06-20 13:56:55.114 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.28/tty/ttyS28
+
+2024-06-20 13:56:55.114 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.29
+
+2024-06-20 13:56:55.115 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.29/tty/ttyS29
+
+2024-06-20 13:56:55.115 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.3
+
+2024-06-20 13:56:55.115 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.3/tty/ttyS3
+
+2024-06-20 13:56:55.115 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.30
+
+2024-06-20 13:56:55.115 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.30/tty/ttyS30
+
+2024-06-20 13:56:55.115 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.31
+
+2024-06-20 13:56:55.115 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.31/tty/ttyS31
+
+2024-06-20 13:56:55.115 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.4
+
+2024-06-20 13:56:55.115 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.4/tty/ttyS4
+
+2024-06-20 13:56:55.115 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.5
+
+2024-06-20 13:56:55.115 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.5/tty/ttyS5
+
+2024-06-20 13:56:55.115 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.6
+
+2024-06-20 13:56:55.115 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.6/tty/ttyS6
+
+2024-06-20 13:56:55.115 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.7
+
+2024-06-20 13:56:55.116 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.7/tty/ttyS7
+
+2024-06-20 13:56:55.116 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.8
+
+2024-06-20 13:56:55.116 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.8/tty/ttyS8
+
+2024-06-20 13:56:55.116 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.9
+
+2024-06-20 13:56:55.116 INFO --> change@/devices/platform/serial8250/serial8250:0/serial8250:0.9/tty/ttyS9
+
+2024-06-20 13:56:55.116 INFO --> change@/devices/platform/thinkpad_acpi
+
+2024-06-20 13:56:55.116 INFO --> change@/devices/platform/thinkpad_acpi/input/input4
+
+2024-06-20 13:56:55.116 INFO --> change@/devices/platform/thinkpad_acpi/input/input4/event4
+
+2024-06-20 13:56:55.116 INFO --> change@/devices/platform/thinkpad_acpi/leds/platform::micmute
+
+2024-06-20 13:56:55.116 INFO --> change@/devices/platform/thinkpad_acpi/leds/tpacpi::lid_logo_dot
+
+2024-06-20 13:56:55.116 INFO --> change@/devices/platform/thinkpad_acpi/leds/tpacpi::power
+
+2024-06-20 13:56:55.116 INFO --> change@/devices/platform/thinkpad_acpi/leds/tpacpi::standby
+
+2024-06-20 13:56:55.116 INFO --> change@/devices/platform/thinkpad_acpi/leds/tpacpi::thinklight
+
+2024-06-20 13:56:55.117 INFO --> change@/devices/platform/thinkpad_acpi/leds/tpacpi::thinkvantage
+
+2024-06-20 13:56:55.117 INFO --> change@/devices/platform/thinkpad_acpi/rfkill/rfkill0
+
+2024-06-20 13:56:55.117 INFO --> change@/devices/platform/thinkpad_hwmon
+
+2024-06-20 13:56:55.117 INFO --> change@/devices/platform/thinkpad_hwmon/hwmon/hwmon3
+
+2024-06-20 13:56:55.117 INFO --> change@/devices/pnp0/00:00
+
+2024-06-20 13:56:55.117 INFO --> change@/devices/pnp0/00:01
+
+2024-06-20 13:56:55.117 INFO --> change@/devices/pnp0/00:02
+
+2024-06-20 13:56:55.117 INFO --> change@/devices/pnp0/00:02/cmos_nvram0
+
+2024-06-20 13:56:55.117 INFO --> change@/devices/pnp0/00:02/rtc/rtc0
+
+2024-06-20 13:56:55.117 INFO --> change@/devices/pnp0/00:02/rtc/rtc0/alarmtimer.0.auto
+
+2024-06-20 13:56:55.117 INFO --> change@/devices/pnp0/00:02/rtc/rtc0/alarmtimer.0.auto/wakeup/wakeup24
+
+2024-06-20 13:56:55.118 INFO --> change@/devices/pnp0/00:02/wakeup/wakeup23
+
+2024-06-20 13:56:55.118 INFO --> change@/devices/pnp0/00:03
+
+2024-06-20 13:56:55.118 INFO --> change@/devices/pnp0/00:04
+
+2024-06-20 13:56:55.118 INFO --> change@/devices/pnp0/00:05
+
+2024-06-20 13:56:55.118 INFO --> change@/devices/pnp0/00:05/tpm/tpm0
+
+2024-06-20 13:56:55.118 INFO --> change@/devices/software
+
+2024-06-20 13:56:55.118 INFO --> change@/devices/system/clockevents/broadcast
+
+2024-06-20 13:56:55.118 INFO --> change@/devices/system/clockevents/clockevent0
+
+2024-06-20 13:56:55.118 INFO --> change@/devices/system/clockevents/clockevent1
+
+2024-06-20 13:56:55.118 INFO --> change@/devices/system/clockevents/clockevent2
+
+2024-06-20 13:56:55.118 INFO --> change@/devices/system/clockevents/clockevent3
+
+2024-06-20 13:56:55.118 INFO --> change@/devices/system/clocksource/clocksource0
+
+2024-06-20 13:56:55.118 INFO --> change@/devices/system/cpu/cpu0
+
+2024-06-20 13:56:55.118 INFO --> change@/devices/system/cpu/cpu1
+
+2024-06-20 13:56:55.119 INFO --> change@/devices/system/cpu/cpu2
+
+2024-06-20 13:56:55.119 INFO --> change@/devices/system/cpu/cpu3
+
+2024-06-20 13:56:55.119 INFO --> change@/devices/system/edac/mc
+
+2024-06-20 13:56:55.119 INFO --> change@/devices/system/machinecheck/machinecheck0
+
+2024-06-20 13:56:55.119 INFO --> change@/devices/system/machinecheck/machinecheck1
+
+2024-06-20 13:56:55.119 INFO --> change@/devices/system/machinecheck/machinecheck2
+
+2024-06-20 13:56:55.119 INFO --> change@/devices/system/machinecheck/machinecheck3
+
+2024-06-20 13:56:55.119 INFO --> change@/devices/system/memory/memory0
+
+2024-06-20 13:56:55.119 INFO --> change@/devices/system/memory/memory1
+
+2024-06-20 13:56:55.119 INFO --> change@/devices/system/memory/memory10
+
+2024-06-20 13:56:55.119 INFO --> change@/devices/system/memory/memory11
+
+2024-06-20 13:56:55.119 INFO --> change@/devices/system/memory/memory12
+
+2024-06-20 13:56:55.119 INFO --> change@/devices/system/memory/memory13
+
+2024-06-20 13:56:55.119 INFO --> change@/devices/system/memory/memory14
+
+2024-06-20 13:56:55.120 INFO --> change@/devices/system/memory/memory15
+
+2024-06-20 13:56:55.120 INFO --> change@/devices/system/memory/memory16
+
+2024-06-20 13:56:55.120 INFO --> change@/devices/system/memory/memory17
+
+2024-06-20 13:56:55.120 INFO --> change@/devices/system/memory/memory18
+
+2024-06-20 13:56:55.120 INFO --> change@/devices/system/memory/memory19
+
+2024-06-20 13:56:55.120 INFO --> change@/devices/system/memory/memory2
+
+2024-06-20 13:56:55.120 INFO --> change@/devices/system/memory/memory20
+
+2024-06-20 13:56:55.120 INFO --> change@/devices/system/memory/memory21
+
+2024-06-20 13:56:55.120 INFO --> change@/devices/system/memory/memory22
+
+2024-06-20 13:56:55.120 INFO --> change@/devices/system/memory/memory23
+
+2024-06-20 13:56:55.120 INFO --> change@/devices/system/memory/memory3
+
+2024-06-20 13:56:55.120 INFO --> change@/devices/system/memory/memory32
+
+2024-06-20 13:56:55.120 INFO --> change@/devices/system/memory/memory33
+
+2024-06-20 13:56:55.120 INFO --> change@/devices/system/memory/memory34
+
+2024-06-20 13:56:55.120 INFO --> change@/devices/system/memory/memory35
+
+2024-06-20 13:56:55.121 INFO --> change@/devices/system/memory/memory36
+
+2024-06-20 13:56:55.121 INFO --> change@/devices/system/memory/memory37
+
+2024-06-20 13:56:55.121 INFO --> change@/devices/system/memory/memory38
+
+2024-06-20 13:56:55.121 INFO --> change@/devices/system/memory/memory4
+
+2024-06-20 13:56:55.121 INFO --> change@/devices/system/memory/memory5
+
+2024-06-20 13:56:55.121 INFO --> change@/devices/system/memory/memory6
+
+2024-06-20 13:56:55.121 INFO --> change@/devices/system/memory/memory7
+
+2024-06-20 13:56:55.121 INFO --> change@/devices/system/memory/memory8
+
+2024-06-20 13:56:55.121 INFO --> change@/devices/system/memory/memory9
+
+2024-06-20 13:56:55.121 INFO --> change@/devices/system/node/node0
+
+2024-06-20 13:56:55.121 INFO --> change@/devices/tracepoint
+
+2024-06-20 13:56:55.121 INFO --> change@/devices/uncore
+
+2024-06-20 13:56:55.121 INFO --> change@/devices/uprobe
+
+2024-06-20 13:56:55.121 INFO --> change@/devices/virtual/bdi/0:49
+
+2024-06-20 13:56:55.122 INFO --> change@/devices/virtual/bdi/11:0
+
+2024-06-20 13:56:55.122 INFO --> change@/devices/virtual/bdi/8:0
+
+2024-06-20 13:56:55.122 INFO --> change@/devices/virtual/cpuid/cpu0
+
+2024-06-20 13:56:55.122 INFO --> change@/devices/virtual/cpuid/cpu1
+
+2024-06-20 13:56:55.122 INFO --> change@/devices/virtual/cpuid/cpu2
+
+2024-06-20 13:56:55.122 INFO --> change@/devices/virtual/cpuid/cpu3
+
+2024-06-20 13:56:55.122 INFO --> change@/devices/virtual/devlink/:ata1--scsi:0:0:0:0
+
+2024-06-20 13:56:55.122 INFO --> change@/devices/virtual/devlink/:ata2--scsi:1:0:0:0
+
+2024-06-20 13:56:55.122 INFO --> change@/devices/virtual/devlink/pci:0000:01:00.0--pci:0000:01:00.1
+
+2024-06-20 13:56:55.122 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:028F5E3F-8853-45A5-8047-3D2462F5A734
+
+2024-06-20 13:56:55.122 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:05901221-D566-11D1-B2F0-00A0C9062910
+
+2024-06-20 13:56:55.122 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:309E63EE-EDB0-4FB6-9173-F680013E7311
+
+2024-06-20 13:56:55.122 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:3ADEBD0F-0C5F-46ED-AB2E-04962B4FDCBC
+
+2024-06-20 13:56:55.122 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:42848006-8886-490E-8C72-2BDCA93A8A09
+
+2024-06-20 13:56:55.123 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:4A5256AA-432C-4CAE-B49F-DCA707622BAD
+
+2024-06-20 13:56:55.123 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:53220266-2F55-4E18-9E9C-D08C6743D6FD
+
+2024-06-20 13:56:55.123 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:67961DCC-1683-4421-A154-68EDE0FF90D2
+
+2024-06-20 13:56:55.123 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:69A8E2C2-F522-463A-8908-C7E46539C8B1
+
+2024-06-20 13:56:55.123 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:85065954-8314-4A06-8BB4-CCAB45032E88
+
+2024-06-20 13:56:55.123 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:921A2F40-0DC4-402D-AC18-B48444EF9ED2
+
+2024-06-20 13:56:55.123 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:99D20A29-9350-4114-AA90-28F0EB83D308
+
+2024-06-20 13:56:55.123 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:A6D822F2-3A67-4DC7-AAD1-55502A6162E8
+
+2024-06-20 13:56:55.123 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:AF46A51B-5C23-4C43-9609-3CBB9553D5A5
+
+2024-06-20 13:56:55.123 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:B9AD7C5A-6FEF-484C-80D3-59A921736750
+
+2024-06-20 13:56:55.123 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:C12AD361-9FA9-4C74-901F-95CB0945CF3E
+
+2024-06-20 13:56:55.123 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:E06BDE62-EE75-48F4-A583-B23E69ABF891
+
+2024-06-20 13:56:55.123 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:EF4F3564-48C8-4894-85C8-B46C26B842C0
+
+2024-06-20 13:56:55.123 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:F6CB5C3C-9CAE-4EBD-B577-931EA32A2CC0
+
+2024-06-20 13:56:55.124 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:00--wmi:F7D5B5E9-CD93-4643-9898-A45B2F2AE3E5
+
+2024-06-20 13:56:55.124 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:01--wmi:05901221-D566-11D1-B2F0-00A0C9062910-1
+
+2024-06-20 13:56:55.124 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:01--wmi:2651D9FD-911C-4B69-B94E-D0DED5963BD7
+
+2024-06-20 13:56:55.124 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:01--wmi:51F5230E-9677-46CD-A1CF-C0B23EE34DB7
+
+2024-06-20 13:56:55.124 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:01--wmi:6A4B54EF-A5ED-4D33-9455-B0D9B48DF4B3
+
+2024-06-20 13:56:55.124 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:01--wmi:74F1EBB6-927A-4C7D-95DF-698E21E80EB5
+
+2024-06-20 13:56:55.126 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:01--wmi:7EEF04FF-4328-447C-B5BB-D449925D538D
+
+2024-06-20 13:56:55.126 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:01--wmi:8ADB159E-1E32-455C-BC93-308A7ED98246
+
+2024-06-20 13:56:55.126 INFO --> change@/devices/virtual/devlink/platform:PNP0C14:01--wmi:98479A64-33F5-4E33-A707-8E251EBBC3A1
+
+2024-06-20 13:56:55.126 INFO --> change@/devices/virtual/devlink/regulator:regulator.0--i2c:15-0050
+
+2024-06-20 13:56:55.126 INFO --> change@/devices/virtual/devlink/regulator:regulator.0--i2c:15-0051
+
+2024-06-20 13:56:55.126 INFO --> change@/devices/virtual/dma_heap/system
+
+2024-06-20 13:56:55.127 INFO --> change@/devices/virtual/dmi/id
+
+2024-06-20 13:56:55.127 INFO --> change@/devices/virtual/drm_dp_aux_dev/drm_dp_aux0
+
+2024-06-20 13:56:55.127 INFO --> change@/devices/virtual/drm_dp_aux_dev/drm_dp_aux1
+
+2024-06-20 13:56:55.127 INFO --> change@/devices/virtual/drm_dp_aux_dev/drm_dp_aux2
+
+2024-06-20 13:56:55.127 INFO --> change@/devices/virtual/firmware-attributes/thinklmi
+
+2024-06-20 13:56:55.127 INFO --> change@/devices/virtual/graphics/fbcon
+
+2024-06-20 13:56:55.127 INFO --> change@/devices/virtual/input/input22
+
+2024-06-20 13:56:55.127 INFO --> change@/devices/virtual/input/input22/event20
+
+2024-06-20 13:56:55.127 INFO --> change@/devices/virtual/input/input23
+
+2024-06-20 13:56:55.127 INFO --> change@/devices/virtual/input/input23/event21
+
+2024-06-20 13:56:55.127 INFO --> change@/devices/virtual/input/input23/mouse5
+
+2024-06-20 13:56:55.127 INFO --> change@/devices/virtual/input/input25
+
+2024-06-20 13:56:55.128 INFO --> change@/devices/virtual/input/input25/event19
+
+2024-06-20 13:56:55.128 INFO --> change@/devices/virtual/input/input25/mouse4
+
+2024-06-20 13:56:55.128 INFO --> change@/devices/virtual/input/mice
+
+2024-06-20 13:56:55.128 INFO --> change@/devices/virtual/mem/full
+
+2024-06-20 13:56:55.128 INFO --> change@/devices/virtual/mem/kmsg
+
+2024-06-20 13:56:55.128 INFO --> change@/devices/virtual/mem/mem
+
+2024-06-20 13:56:55.128 INFO --> change@/devices/virtual/mem/null
+
+2024-06-20 13:56:55.128 INFO --> change@/devices/virtual/mem/port
+
+2024-06-20 13:56:55.128 INFO --> change@/devices/virtual/mem/random
+
+2024-06-20 13:56:55.128 INFO --> change@/devices/virtual/mem/urandom
+
+2024-06-20 13:56:55.128 INFO --> change@/devices/virtual/mem/zero
+
+2024-06-20 13:56:55.128 INFO --> change@/devices/virtual/memory_tiering/memory_tier4
+
+2024-06-20 13:56:55.128 INFO --> change@/devices/virtual/misc/autofs
+
+2024-06-20 13:56:55.128 INFO --> change@/devices/virtual/misc/cpu_dma_latency
+
+2024-06-20 13:56:55.129 INFO --> change@/devices/virtual/misc/device-mapper
+
+2024-06-20 13:56:55.129 INFO --> change@/devices/virtual/misc/fuse
+
+2024-06-20 13:56:55.129 INFO --> change@/devices/virtual/misc/hpet
+
+2024-06-20 13:56:55.129 INFO --> change@/devices/virtual/misc/hw_random
+
+2024-06-20 13:56:55.129 INFO --> change@/devices/virtual/misc/kvm
+
+2024-06-20 13:56:55.129 INFO --> change@/devices/virtual/misc/loop-control
+
+2024-06-20 13:56:55.129 INFO --> change@/devices/virtual/misc/nvram
+
+2024-06-20 13:56:55.129 INFO --> change@/devices/virtual/misc/psaux
+
+2024-06-20 13:56:55.129 INFO --> change@/devices/virtual/misc/rfkill
+
+2024-06-20 13:56:55.129 INFO --> change@/devices/virtual/misc/snapshot
+
+2024-06-20 13:56:55.129 INFO --> change@/devices/virtual/misc/udmabuf
+
+2024-06-20 13:56:55.129 INFO --> change@/devices/virtual/misc/uhid
+
+2024-06-20 13:56:55.129 INFO --> change@/devices/virtual/misc/uhid/0003:256C:FFFF.0003
+
+2024-06-20 13:56:55.129 INFO --> change@/devices/virtual/misc/uhid/0003:256C:FFFF.0003/hidraw/hidraw2
+
+2024-06-20 13:56:55.129 INFO --> change@/devices/virtual/misc/uhid/0003:256C:FFFF.0003/input/input19
+
+2024-06-20 13:56:55.130 INFO --> change@/devices/virtual/misc/uhid/0003:256C:FFFF.0003/input/input19/event17
+
+2024-06-20 13:56:55.130 INFO --> change@/devices/virtual/misc/uhid/0003:256C:FFFF.0003/input/input19/mouse2
+
+2024-06-20 13:56:55.130 INFO --> change@/devices/virtual/misc/uhid/0003:256C:FFFF.0004
+
+2024-06-20 13:56:55.130 INFO --> change@/devices/virtual/misc/uhid/0003:256C:FFFF.0004/hidraw/hidraw3
+
+2024-06-20 13:56:55.130 INFO --> change@/devices/virtual/misc/uhid/0003:256C:FFFF.0004/input/input20
+
+2024-06-20 13:56:55.130 INFO --> change@/devices/virtual/misc/uhid/0003:256C:FFFF.0004/input/input20/event18
+
+2024-06-20 13:56:55.130 INFO --> change@/devices/virtual/misc/uhid/0003:256C:FFFF.0004/input/input20/mouse3
+
+2024-06-20 13:56:55.130 INFO --> change@/devices/virtual/misc/uinput
+
+2024-06-20 13:56:55.130 INFO --> change@/devices/virtual/misc/userfaultfd
+
+2024-06-20 13:56:55.130 INFO --> change@/devices/virtual/misc/vga_arbiter
+
+2024-06-20 13:56:55.130 INFO --> change@/devices/virtual/msr/msr0
+
+2024-06-20 13:56:55.130 INFO --> change@/devices/virtual/msr/msr1
+
+2024-06-20 13:56:55.130 INFO --> change@/devices/virtual/msr/msr2
+
+2024-06-20 13:56:55.131 INFO --> change@/devices/virtual/msr/msr3
+
+2024-06-20 13:56:55.131 INFO --> change@/devices/virtual/net/lo
+
+2024-06-20 13:56:55.131 INFO --> change@/devices/virtual/sound/ctl-led
+
+2024-06-20 13:56:55.131 INFO --> change@/devices/virtual/sound/seq
+
+2024-06-20 13:56:55.131 INFO --> change@/devices/virtual/sound/timer
+
+2024-06-20 13:56:55.131 INFO --> change@/devices/virtual/thermal/cooling_device0
+
+2024-06-20 13:56:55.131 INFO --> change@/devices/virtual/thermal/cooling_device1
+
+2024-06-20 13:56:55.131 INFO --> change@/devices/virtual/thermal/cooling_device2
+
+2024-06-20 13:56:55.131 INFO --> change@/devices/virtual/thermal/cooling_device3
+
+2024-06-20 13:56:55.131 INFO --> change@/devices/virtual/thermal/cooling_device4
+
+2024-06-20 13:56:55.131 INFO --> change@/devices/virtual/thermal/thermal_zone0
+
+2024-06-20 13:56:55.131 INFO --> change@/devices/virtual/thermal/thermal_zone0/hwmon1
+
+2024-06-20 13:56:55.131 INFO --> change@/devices/virtual/tty/console
+
+2024-06-20 13:56:55.131 INFO --> change@/devices/virtual/tty/ptmx
+
+2024-06-20 13:56:55.132 INFO --> change@/devices/virtual/tty/tty
+
+2024-06-20 13:56:55.132 INFO --> change@/devices/virtual/tty/tty0
+
+2024-06-20 13:56:55.132 INFO --> change@/devices/virtual/tty/tty1
+
+2024-06-20 13:56:55.132 INFO --> change@/devices/virtual/tty/tty10
+
+2024-06-20 13:56:55.132 INFO --> change@/devices/virtual/tty/tty11
+
+2024-06-20 13:56:55.132 INFO --> change@/devices/virtual/tty/tty12
+
+2024-06-20 13:56:55.132 INFO --> change@/devices/virtual/tty/tty13
+
+2024-06-20 13:56:55.132 INFO --> change@/devices/virtual/tty/tty14
+
+2024-06-20 13:56:55.132 INFO --> change@/devices/virtual/tty/tty15
+
+2024-06-20 13:56:55.132 INFO --> change@/devices/virtual/tty/tty16
+
+2024-06-20 13:56:55.132 INFO --> change@/devices/virtual/tty/tty17
+
+2024-06-20 13:56:55.132 INFO --> change@/devices/virtual/tty/tty18
+
+2024-06-20 13:56:55.132 INFO --> change@/devices/virtual/tty/tty19
+
+2024-06-20 13:56:55.132 INFO --> change@/devices/virtual/tty/tty2
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty20
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty21
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty22
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty23
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty24
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty25
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty26
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty27
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty28
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty29
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty3
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty30
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty31
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty32
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty33
+
+2024-06-20 13:56:55.133 INFO --> change@/devices/virtual/tty/tty34
+
+2024-06-20 13:56:55.134 INFO --> change@/devices/virtual/tty/tty35
+
+2024-06-20 13:56:55.134 INFO --> change@/devices/virtual/tty/tty36
+
+2024-06-20 13:56:55.134 INFO --> change@/devices/virtual/tty/tty37
+
+2024-06-20 13:56:55.134 INFO --> change@/devices/virtual/tty/tty38
+
+2024-06-20 13:56:55.134 INFO --> change@/devices/virtual/tty/tty39
+
+2024-06-20 13:56:55.134 INFO --> change@/devices/virtual/tty/tty4
+
+2024-06-20 13:56:55.134 INFO --> change@/devices/virtual/tty/tty40
+
+2024-06-20 13:56:55.134 INFO --> change@/devices/virtual/tty/tty41
+
+2024-06-20 13:56:55.134 INFO --> change@/devices/virtual/tty/tty42
+
+2024-06-20 13:56:55.134 INFO --> change@/devices/virtual/tty/tty43
+
+2024-06-20 13:56:55.134 INFO --> change@/devices/virtual/tty/tty44
+
+2024-06-20 13:56:55.134 INFO --> change@/devices/virtual/tty/tty45
+
+2024-06-20 13:56:55.134 INFO --> change@/devices/virtual/tty/tty46
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty47
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty48
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty49
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty5
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty50
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty51
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty52
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty53
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty54
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty55
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty56
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty57
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty58
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty59
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty6
+
+2024-06-20 13:56:55.135 INFO --> change@/devices/virtual/tty/tty60
+
+2024-06-20 13:56:55.136 INFO --> change@/devices/virtual/tty/tty61
+
+2024-06-20 13:56:55.136 INFO --> change@/devices/virtual/tty/tty62
+
+2024-06-20 13:56:55.136 INFO --> change@/devices/virtual/tty/tty63
+
+2024-06-20 13:56:55.136 INFO --> change@/devices/virtual/tty/tty7
+
+2024-06-20 13:56:55.136 INFO --> change@/devices/virtual/tty/tty8
+
+2024-06-20 13:56:55.136 INFO --> change@/devices/virtual/tty/tty9
+
+2024-06-20 13:56:55.136 INFO --> change@/devices/virtual/vc/vcs
+
+2024-06-20 13:56:55.136 INFO --> change@/devices/virtual/vc/vcs1
+
+2024-06-20 13:56:55.136 INFO --> change@/devices/virtual/vc/vcs2
+
+2024-06-20 13:56:55.136 INFO --> change@/devices/virtual/vc/vcs3
+
+2024-06-20 13:56:55.136 INFO --> change@/devices/virtual/vc/vcs4
+
+2024-06-20 13:56:55.136 INFO --> change@/devices/virtual/vc/vcs5
+
+2024-06-20 13:56:55.136 INFO --> change@/devices/virtual/vc/vcs6
+
+2024-06-20 13:56:55.137 INFO --> change@/devices/virtual/vc/vcsa
+
+2024-06-20 13:56:55.137 INFO --> change@/devices/virtual/vc/vcsa1
+
+2024-06-20 13:56:55.137 INFO --> change@/devices/virtual/vc/vcsa2
+
+2024-06-20 13:56:55.137 INFO --> change@/devices/virtual/vc/vcsa3
+
+2024-06-20 13:56:55.137 INFO --> change@/devices/virtual/vc/vcsa4
+
+2024-06-20 13:56:55.137 INFO --> change@/devices/virtual/vc/vcsa5
+
+2024-06-20 13:56:55.137 INFO --> change@/devices/virtual/vc/vcsa6
+
+2024-06-20 13:56:55.137 INFO --> change@/devices/virtual/vc/vcsu
+
+2024-06-20 13:56:55.137 INFO --> change@/devices/virtual/vc/vcsu1
+
+2024-06-20 13:56:55.137 INFO --> change@/devices/virtual/vc/vcsu2
+
+2024-06-20 13:56:55.137 INFO --> change@/devices/virtual/vc/vcsu3
+
+2024-06-20 13:56:55.137 INFO --> change@/devices/virtual/vc/vcsu4
+
+2024-06-20 13:56:55.137 INFO --> change@/devices/virtual/vc/vcsu5
+
+2024-06-20 13:56:55.137 INFO --> change@/devices/virtual/vc/vcsu6
+
+2024-06-20 13:56:55.138 INFO --> change@/devices/virtual/vtconsole/vtcon0
+
+2024-06-20 13:56:55.138 INFO --> change@/devices/virtual/vtconsole/vtcon1
+
+2024-06-20 13:56:55.138 INFO --> change@/devices/virtual/wakeup/wakeup29
+
+2024-06-20 13:56:55.138 INFO --> change@/devices/virtual/workqueue/blkcg_punt_bio
+
+2024-06-20 13:56:55.138 INFO --> change@/devices/virtual/workqueue/scsi_tmf_0
+
+2024-06-20 13:56:55.138 INFO --> change@/devices/virtual/workqueue/scsi_tmf_1
+
+2024-06-20 13:56:55.138 INFO --> change@/devices/virtual/workqueue/scsi_tmf_2
+
+2024-06-20 13:56:55.138 INFO --> change@/devices/virtual/workqueue/scsi_tmf_3
+
+2024-06-20 13:56:55.138 INFO --> change@/devices/virtual/workqueue/scsi_tmf_4
+
+2024-06-20 13:56:55.138 INFO --> change@/devices/virtual/workqueue/scsi_tmf_5
+
+2024-06-20 13:56:55.138 INFO --> change@/devices/virtual/workqueue/writeback
+
+2024-06-20 13:56:55.281 INFO --> change@/devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card1
+
+2024-06-20 13:56:55.338 INFO --> change@/devices/pci0000:00/0000:00:1b.0/sound/card0
+
+2024-06-20 13:56:55.400 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata2/host1/target1:0:0/1:0:0:0/block/sr0
+
+2024-06-20 13:56:55.408 INFO --> change@/devices/pci0000:00/0000:00:1f.2/ata1/host0/target0:0:0/0:0:0:0/block/sda
+
