@@ -4,17 +4,19 @@ cd $(dirname $0)
 
 pgrep -x sxhkd > /dev/null || sxhkd -c sxhkdrc . &
 
-bspc monitor LVDS-1 -d I II III
-bspc monitor HDMI-1 -d IV V VI
+bspc monitor DP-1 -d I II III
+bspc monitor LVS-1 -d IV V VI
 
 bspc config border_width        0
-bspc config window_gap          15
+bspc config window_gap          10
 
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc config focus_follows_pointer true
+
+bspc rule -a Plank manage=on border=off locked=on focus=off follow=off
 
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
 #bspc rule -a Chromium desktop='^2'
@@ -23,7 +25,7 @@ bspc config focus_follows_pointer true
 #bspc rule -a Screenkey manage=off
 
 feh --no-fehbg --bg-fill wallpapers/wallpaper2.jpg
-picom --config configs/picom.conf &
+#picom # --config picom.conf &
 pkill polybar
 polybar -c configs/polybar.ini &
 #flatpak run io.github.jeffshee.Hidamari &
@@ -32,7 +34,7 @@ polybar -c configs/polybar.ini &
 
 xsetroot -cursor_name left_ptr
 xset s off && xset -dpms
-redshift -P -O 3000
+#redshift -P -O 3000
 otd-daemon &
 
 cd ~
