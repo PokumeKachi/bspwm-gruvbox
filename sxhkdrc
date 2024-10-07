@@ -1,13 +1,24 @@
-super + Return
+Hiragana_Katakana
+  nautilus
+
+Hangul_Hanja
+  alacritty
+
+Hangul
+  alacritty
+
+Henkan_Mode
   alacritty --config-file configs/alacritty.toml --working-directory ~
+
+Muhenkan
+  rofi -show drun -theme configs/rofi-theme.rasi
 
 super + @period
   rofimoji --hidden-descriptions --selector-args="-theme ~/.config/bspwm-gruvbox/configs/rofimoji.rasi"
 
 
 super + @space
-  rofi -show drun -theme configs/rofi-theme.rasi
-# dmenu_run -fn 'JetBrainsMonoNFM Thin-15' -b -p 'Open: '
+  dmenu_run -fn 'JetBrainsMonoNFM Thin-15' -b -p 'Open: '
 
 super + e
   nautilus
@@ -25,6 +36,12 @@ XF86MonBrightness{Up,Down}
 
 XF86Audio{Raise,Lower}Volume
   amixer -q sset Master 5%{+,-}
+
+XF86Display
+  arandr
+
+XF86AudioMute
+  amixer set Master toggle
 
 # quit/restart bspwm
 super + alt + {q,r}

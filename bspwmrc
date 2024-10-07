@@ -8,7 +8,7 @@ bspc monitor DP-1 -d I II III
 bspc monitor LVS-1 -d IV V VI
 
 bspc config border_width        0
-bspc config window_gap          10
+bspc config window_gap          50
 
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
@@ -24,8 +24,8 @@ bspc rule -a Plank manage=on border=off locked=on focus=off follow=off
 #bspc rule -a Kupfer.py focus=on
 #bspc rule -a Screenkey manage=off
 
-feh --no-fehbg --bg-fill wallpapers/wallpaper2.jpg
-#picom # --config picom.conf &
+feh --no-fehbg --bg-fill wallpapers/wallpaper9.jpg
+picom --config configs/picom.conf &
 pkill polybar
 polybar -c configs/polybar.ini &
 #flatpak run io.github.jeffshee.Hidamari &
@@ -34,7 +34,7 @@ polybar -c configs/polybar.ini &
 
 xsetroot -cursor_name left_ptr
 xset s off && xset -dpms
-#redshift -P -O 3000
+redshift -P -O 3500
 otd-daemon &
 
 cd ~

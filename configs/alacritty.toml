@@ -30,11 +30,11 @@ cyan    = '#8ec07c'
 white   = '#ebdbb2'
 
 [font]
-size = 20.0
+size = 7.0
 
 [font.normal]
 family = "JetBrainsMonoNFM"
 
 [window]
-opacity = 1.0
+opacity = 0.0
 startup_mode = 'Maximized'
