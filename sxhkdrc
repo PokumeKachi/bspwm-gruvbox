@@ -1,19 +1,23 @@
-Hiragana_Katakana
-  alacritty --config-file configs/alacritty.toml --working-directory ~
-
-Hangul_Hanja
-	bspc node -f next.local.!hidden.window
-
-Hangul
-  nautilus
+Muhenkan
+  rofi -show drun -theme configs/rofi-theme.rasi
 
 Henkan_Mode
   rofi -show window -theme configs/rofi-theme.rasi -config configs/rofi-conf.rasi
 
-Muhenkan
-  rofi -show drun -theme configs/rofi-theme.rasi
+Hiragana_Katakana
+	bspc node -f next.local.!hidden.window
 
-super + @period
+Hangul_Hanja
+  alacritty --config-file configs/alacritty.toml --working-directory ~
+
+Print
+ scrot -f -s - | xclip -selection clipboard -t image/png
+
+Hangul
+  nautilus
+  #jgmenu --at-pointer --config-file configs/jgmenurc
+
+super + period
   rofimoji --hidden-descriptions --selector-args="-theme ~/.config/bspwm-gruvbox/configs/rofimoji.rasi"
 
 
@@ -72,7 +76,8 @@ super + {t,shift + t,s}
 	bspc node -t {tiled,pseudo_tiled,floating}
 
 super + f
-  bspc node -t fullscreen && for id in $(bspc query -N -n '.leaf.!focused'); do bspc node $id -g hidden=on; done
+  bspc node -t fullscreen
+  && for id in $(bspc query -N -n '.leaf.!focused'); do bspc node $id -g hidden=on; done
 
 # set the node flags
 super + ctrl + {m,x,y,z}
@@ -95,11 +100,11 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-super + Tab
-  rofi -show window -theme configs/rofi-theme.rasi -config configs/rofi-conf.rasi
+#super + Tab
+  #rofi -show window -theme configs/rofi-theme.rasi -config configs/rofi-conf.rasi
 
-alt + Tab
-  bspc node -f last
+#alt + Tab
+#  bspc node -f last
 
 super + grave
   bspc desktop -f last

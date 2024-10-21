@@ -1,16 +1,19 @@
 #! /bin/sh
+
 ORIGINAL_DIR=$(pwd)
 cd $(dirname $0)
 
+xmodmap configs/xmodmap
+
 pgrep -x sxhkd > /dev/null || sxhkd -c sxhkdrc . &
 
-bspc monitor eDP-1 -d I II III
+bspc monitor eDP-1 -d I II III IV V
 #bspc monitor eDP-1 -d IV V VI
 
-bspc config border_width        0
-bspc config window_gap          1
+bspc config border_width        1
+bspc config window_gap          0
 
-bspc config split_ratio          0.55
+bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
@@ -23,19 +26,22 @@ bspc rule -a Plank manage=on border=off locked=on focus=off follow=off
 #bspc rule -a mplayer2 state=floating
 #bspc rule -a Kupfer.py focus=on
 #bspc rule -a Screenkey manage=off
+bspc rule -a gammy desktop='^2'
 
-feh --no-fehbg --bg-fill wallpapers/wallpaper9.jpg
-#picom --config configs/picom.conf &
+feh --no-fehbg --bg-fill wallpapers/15.jpg
+picom --config configs/picom.conf &
 pkill polybar
 polybar -c configs/polybar.ini &
+gammy & disown
+bspc  -d 2
 #flatpak run io.github.jeffshee.Hidamari &
 #ibus-daemon --xim --replace & disown
 #ibus start & disown > /home/kachi/Videos/hehe
 
 xsetroot -cursor_name left_ptr
 xset s off && xset -dpms
-redshift -P -O 3500
-otd-daemon &
+#redshift -P -O 2800
+#otd-daemon &
 
 cd ~
 #cd $ORIGINAL_DIR
