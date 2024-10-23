@@ -13,3 +13,11 @@
 2024-10-20 17:23:32.378 ERROR [691] [MainWindow::createTrayIcon@144] Systray unavailable. Closing the window will quit the app.
 2024-10-20 20:42:47.383 ERROR [5747] [MainWindow::createTrayIcon@144] Systray unavailable. Closing the window will quit the app.
 2024-10-21 07:52:46.322 ERROR [9762] [MainWindow::createTrayIcon@144] Systray unavailable. Closing the window will quit the app.
+2024-10-21 12:33:21.787 ERROR [719] [MainWindow::createTrayIcon@144] Systray unavailable. Closing the window will quit the app.
+2024-10-21 19:29:51.418 ERROR [54124] [MainWindow::createTrayIcon@144] Systray unavailable. Closing the window will quit the app.
+2024-10-22 17:14:04.165 ERROR [695] [MainWindow::createTrayIcon@144] Systray unavailable. Closing the window will quit the app.
+2024-10-22 17:18:48.929 ERROR [694] [MainWindow::createTrayIcon@144] Systray unavailable. Closing the window will quit the app.
+2024-10-22 17:20:01.031 ERROR [694] [MainWindow::createTrayIcon@144] Systray unavailable. Closing the window will quit the app.
+2024-10-23 08:25:37.673 ERROR [27171] [MainWindow::createTrayIcon@144] Systray unavailable. Closing the window will quit the app.
+2024-10-23 08:35:30.401 ERROR [30827] [MainWindow::createTrayIcon@144] Systray unavailable. Closing the window will quit the app.
+2024-10-23 08:42:22.407 ERROR [33473] [MainWindow::createTrayIcon@144] Systray unavailable. Closing the window will quit the app.

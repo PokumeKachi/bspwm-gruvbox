@@ -13,13 +13,15 @@ Hangul_Hanja
 Print
  scrot -f -s - | xclip -selection clipboard -t image/png
 
-Hangul
+super + Hangul
   nautilus
   #jgmenu --at-pointer --config-file configs/jgmenurc
 
 super + period
   rofimoji --hidden-descriptions --selector-args="-theme ~/.config/bspwm-gruvbox/configs/rofimoji.rasi"
 
+ctrl + alt + Delete
+  notify-send "Hibernate" "$(hibernate)"
 
 super + @space
   dmenu_run -fn 'JetBrainsMonoNFM Thin-15' -b -p 'Open: '
@@ -70,7 +72,7 @@ super + g
 #
 # state/flags
 #
-
+SS
 # set the window state
 super + {t,shift + t,s}
 	bspc node -t {tiled,pseudo_tiled,floating}

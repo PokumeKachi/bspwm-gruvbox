@@ -26,14 +26,24 @@ bspc rule -a Plank manage=on border=off locked=on focus=off follow=off
 #bspc rule -a mplayer2 state=floating
 #bspc rule -a Kupfer.py focus=on
 #bspc rule -a Screenkey manage=off
-bspc rule -a gammy desktop='^2'
+bspc rule -a gammy desktop='^5'
 
-feh --no-fehbg --bg-fill wallpapers/15.jpg
+feh --no-fehbg --bg-fill wallpapers/13.jpg
 picom --config configs/picom.conf &
+
 pkill polybar
 polybar -c configs/polybar.ini &
+
+pkill tint2
+tint2 -c configs/tint2rc & disown
+
+#pgrep -x polybar > /dev/null || polybar -c configs/polybar.ini & disow
+#pgrep -x tint2 > /dev/null || tint2 -c configs/tint2rc & disown
+
 gammy & disown
-bspc  -d 2
+
+pkill dunst
+dunst -conf configs/dunstrc & disown
 #flatpak run io.github.jeffshee.Hidamari &
 #ibus-daemon --xim --replace & disown
 #ibus start & disown > /home/kachi/Videos/hehe
