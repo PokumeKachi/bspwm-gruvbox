@@ -1,8 +1,8 @@
 Muhenkan
-  rofi -show drun -theme configs/rofi-theme.rasi
+  rofi -show drun -theme configs/old-rofi-theme.rasi
 
 Henkan_Mode
-  rofi -show window -theme configs/rofi-theme.rasi -config configs/rofi-conf.rasi
+  rofi -show window -theme configs/old-rofi-theme.rasi -config configs/rofi-conf.rasi
 
 Hiragana_Katakana
 	bspc node -f next.local.!hidden.window
@@ -50,7 +50,7 @@ XF86AudioMute
 
 # quit/restart bspwm
 super + alt + {q,r}
-	bspc {quit,wm -r}
+	eval "{bspc quit,./reset-cooldown.sh}"
 
 # close and kill
 super + shift + w

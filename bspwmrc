@@ -10,8 +10,8 @@ pgrep -x sxhkd > /dev/null || sxhkd -c sxhkdrc . &
 bspc monitor eDP-1 -d I II III IV V
 #bspc monitor eDP-1 -d IV V VI
 
-bspc config border_width        1
-bspc config window_gap          0
+bspc config border_width        0
+bspc config window_gap          50
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
@@ -22,13 +22,13 @@ bspc config focus_follows_pointer true
 bspc rule -a Plank manage=on border=off locked=on focus=off follow=off
 
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
-#bspc rule -a Chromium desktop='^2'
+#bspc rule -a Chromium desktop='^2'picom animations arch linux package
 #bspc rule -a mplayer2 state=floating
 #bspc rule -a Kupfer.py focus=on
 #bspc rule -a Screenkey manage=off
 bspc rule -a gammy desktop='^5'
 
-feh --no-fehbg --bg-fill wallpapers/13.jpg
+feh --no-fehbg --bg-fill wallpapers/15.jpg
 picom --config configs/picom.conf &
 
 pkill polybar
