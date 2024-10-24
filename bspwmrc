@@ -24,7 +24,7 @@ bspc rule -a Plank manage=on border=off locked=on focus=off follow=off
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
 #bspc rule -a Chromium desktop='^2'picom animations arch linux package
 #bspc rule -a mplayer2 state=floating
-#bspc rule -a Kupfer.py focus=on
+#bspc rule -a Kupfer.py f#ocus=on
 #bspc rule -a Screenkey manage=off
 bspc rule -a gammy desktop='^5'
 
@@ -34,11 +34,11 @@ picom --config configs/picom.conf &
 pkill polybar
 polybar -c configs/polybar.ini &
 
-pkill tint2
-tint2 -c configs/tint2rc & disown
+#pkill tint2
+#tint2 -c configs/tint2rc & disown
 
 #pgrep -x polybar > /dev/null || polybar -c configs/polybar.ini & disow
-#pgrep -x tint2 > /dev/null || tint2 -c configs/tint2rc & disown
+pgrep -x tint2 > /dev/null || tint2 -c configs/tint2rc & disown
 
 gammy & disown
 
