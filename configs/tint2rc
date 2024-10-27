@@ -38,7 +38,7 @@ background_color_pressed = #55ffaa 0
 
 border_color = #ffaa33 0
 border_color_hover = #ffaa33 0
-border_color_pressed not to= #ffaa33 0
+border_color_pressed = #ffaa33 0
 
 # Background 4: Urgent task
 rounded = 4
@@ -64,21 +64,21 @@ border_color_pressed = #000000 100
 
 #-------------------------------------
 # Panel
-panel_items = BTC
-panel_size = 100% 38
+panel_items = T
+panel_size = 100% 50
 panel_margin = 0 0
-panel_padding = 10 0 50
+panel_padding = 100 0 100
 panel_background_id = 1
 wm_menu = 1
 panel_dock = 1
 panel_position = bottom center horizontal
 panel_layer = normal
-panel_monitor = allygwhat about 0
+panel_monitor = all
 panel_shrink = 1
 autohide = 1
 autohide_show_timeout = 0
-autohide_hide_timeout = 1
-autohide_height = 2
+autohide_hide_timeout = 0
+autohide_height = 0
 strut_policy = none #follow_size
 panel_window_name = tint2
 disable_transparency = 0
@@ -91,7 +91,7 @@ mouse_pressed_icon_asb = 100 0 0
 # Taskbar
 taskbar_mode = single_desktop
 taskbar_hide_if_empty = 0
-taskbar_padding = 0 0 10
+taskbar_padding = 0 0 100
 taskbar_background_id = 0
 taskbar_active_background_id = 0
 taskbar_name = 0
@@ -104,7 +104,7 @@ taskbar_name_background_id = 0
 taskbar_name_active_background_id = 0
 taskbar_name_font_color = #e3e3e3 100
 taskbar_name_active_font_color = #ffffff 100
-taskbar_distribute_size = 0
+taskbar_distribute_size = 1
 taskbar_sort_order = none
 task_align = center
 
