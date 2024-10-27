@@ -7,11 +7,20 @@ xmodmap configs/xmodmap
 
 pgrep -x sxhkd > /dev/null || sxhkd -c sxhkdrc . &
 
-bspc monitor eDP-1 -d I II III IV V
-#bspc monitor eDP-1 -d IV V VI
+if grep -q "disconnected" /sys/class/drm/card1-HDMI-A-1/status; then
+  bspc rule -a gammy desktop='^5'
+  bspc monitor eDP-1 -d I II III IV V
+  gammy & disown
+else
+  bspc rule -a gammy desktop='^6'
+  bspc monitor HDMI-1 -d I II III
+  bspc monitor eDP-1 -d VI V VI
+  xrandr --output eDP-1 --mode 1920x1080 --rate 60.01 --pos 1920x0 --rotate normal --output DP-1 --off --output HDMI-1 --primary --mode 1920x1080 --rate 100.00 --pos 0x0 --rotate normal --output DP-2 --off --output HDMI-2 --off
+fi
+
 
 bspc config border_width        0
-bspc config window_gap          50
+bspc config window_gap          30
 
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
@@ -26,21 +35,31 @@ bspc rule -a Plank manage=on border=off locked=on focus=off follow=off
 #bspc rule -a mplayer2 state=floating
 #bspc rule -a Kupfer.py f#ocus=on
 #bspc rule -a Screenkey manage=off
-bspc rule -a gammy desktop='^5'
+bspc rule -a tint2 layer=above sticky=on
 
 feh --no-fehbg --bg-fill wallpapers/15.jpg
 picom --config configs/picom.conf &
 
-pkill polybar
-polybar -c configs/polybar.ini &
+killall polybar
+
+
+if type "xrandr"; then
+  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+    MONITOR=$m polybar -c configs/polybar.ini &
+  done
+else
+  polybar -c configs/polybar.ini &
+fi
+
+killall tint2
+tint2 -c configs/tint2rc & disown
+
 
 #pkill tint2
 #tint2 -c configs/tint2rc & disown
 
 #pgrep -x polybar > /dev/null || polybar -c configs/polybar.ini & disow
-pgrep -x tint2 > /dev/null || tint2 -c configs/tint2rc & disown
 
-gammy & disown
 
 pkill dunst
 dunst -conf configs/dunstrc & disown

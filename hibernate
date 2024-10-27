@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Get the total used RAM (in KB)
+used_ram=$(free | awk '/^Mem:/ { print $3 }')
+
+# Get the total swap size (in KB)
+swap_size=$(free | awk '/^Swap:/ { print $2 }')
+state=$(upower -i $(upower -e | grep 'BAT') | grep -i 'state' | awk '{print $2}')
+
+if [ "$used_ram" -gt "$swap_size" ]; then
+	echo "Can't hibernate, too much ram used"
+else
+	echo "Hibernatin' time baby"
+#    if [ "$state" = "discharging" ]; then
+    	systemctl hibernate
+#    else
+#	systemctl suspend
+#    fi
+fi
+

@@ -36,9 +36,9 @@ background_color = #55ffaa 0
 background_color_hover = #55ffaa 0
 background_color_pressed = #55ffaa 0
 
-border_color = #ffaa33 50
-border_color_hover = #ffaa33 50
-border_color_pressed = #ffaa33 50
+border_color = #ffaa33 0
+border_color_hover = #ffaa33 0
+border_color_pressed not to= #ffaa33 0
 
 # Background 4: Urgent task
 rounded = 4
@@ -70,16 +70,16 @@ panel_margin = 0 0
 panel_padding = 10 0 50
 panel_background_id = 1
 wm_menu = 1
-panel_dock = 0
+panel_dock = 1
 panel_position = bottom center horizontal
 panel_layer = normal
 panel_monitor = allygwhat about 0
 panel_shrink = 1
-autohide = 0
+autohide = 1
 autohide_show_timeout = 0
-autohide_hide_tiwhta is meout = 0.5
+autohide_hide_timeout = 1
 autohide_height = 2
-strut_policy = follow_size
+strut_policy = none #follow_size
 panel_window_name = tint2
 disable_transparency = 0
 mouse_effects = 1

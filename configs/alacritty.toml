@@ -31,12 +31,12 @@ cyan    = '#8ec07c'
 white   = '#ebdbb2'
 
 [font]
-size = 7.0
+size = 18.0
 
 [font.normal]
 family = "JetBrainsMonoNFM"
 
 [window]
-opacity = 0.7
+opacity = 0.8
 startup_mode = 'Maximized'
 # padding = { x = 5 , y = 5 }

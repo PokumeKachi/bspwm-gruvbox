@@ -1,5 +1,8 @@
+#super + @space
 Muhenkan
   rofi -show drun -theme configs/old-rofi-theme.rasi
+
+#  original_pos=$(xdotool getmouselocation --shell); xdotool mousemove 960 1080; eval $original_pos; xdotool mousemove $X $Y
 
 Henkan_Mode
   rofi -show window -theme configs/old-rofi-theme.rasi -config configs/rofi-conf.rasi
@@ -13,18 +16,18 @@ Hangul_Hanja
 Print
  scrot -f -s - | xclip -selection clipboard -t image/png
 
-super + Hangul
-  nautilus
+#super + Hangul
+#  nautilus
   #jgmenu --at-pointer --config-file configs/jgmenurc
 
 super + period
   rofimoji --hidden-descriptions --selector-args="-theme ~/.config/bspwm-gruvbox/configs/rofimoji.rasi"
 
 ctrl + alt + Delete
-  notify-send "Hibernate" "$(hibernate)"
+  notify-send "Hibernate" "$(./hibernate)"
 
-super + @space
-  dmenu_run -fn 'JetBrainsMonoNFM Thin-15' -b -p 'Open: '
+#super + @space
+#  dmenu_run -fn 'JetBrainsMonoNFM Thin-15' -b -p 'Open: '
 
 super + e
   nautilus
@@ -50,7 +53,8 @@ XF86AudioMute
 
 # quit/restart bspwm
 super + alt + {q,r}
-	eval "{bspc quit,./reset-cooldown.sh}"
+  bspc {quit,wm -r}
+#	eval "{bspc quit,./reset-cooldown.sh}"
 
 # close and kill
 super + shift + w
