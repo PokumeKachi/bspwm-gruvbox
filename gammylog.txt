@@ -1,0 +1,1 @@
+﻿2024-10-28 08:11:20.988 ERROR [736] [MainWindow::createTrayIcon@144] Systray unavailable. Closing the window will quit the app.

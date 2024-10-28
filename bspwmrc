@@ -45,10 +45,10 @@ killall polybar
 
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar -c configs/polybar.ini &
+    MONITOR=$m polybar -c configs/polybar/polybar.ini &
   done
 else
-  polybar -c configs/polybar.ini &
+  polybar -c configs/polybar/polybar.ini &
 fi
 
 killall tint2
