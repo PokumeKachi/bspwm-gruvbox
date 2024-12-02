@@ -1,0 +1,20 @@
+#!/bin/sh
+
+if ! ip link list | grep -q "wwan0"; then
+  PASSWORD=$(zenity --password --timeout=5 --title="Authentication Required To Turn On LTE")
+
+  if [ -z "$PASSWORD" ]; then
+    echo "UNLOADED"
+    exit
+  fi
+
+  echo $PASSWORD | sudo -S modprobe xmm7360
+fi
+
+state=$(ip link show wwan0 | awk '/state/ {print $9}')
+
+if [ "$state" = "DOWN" ]; then
+  echo OFF
+else
+  echo ON
+fi

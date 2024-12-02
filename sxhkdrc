@@ -1,14 +1,17 @@
+~button2
+    ;echo -n | xclip -in
 #super + @space
 Muhenkan
   rofi -show drun -theme configs/old-rofi-theme.rasi
+  #rofi -show drun -theme configs/rofi-theme-metro.rasi
 
 #  original_pos=$(xdotool getmouselocation --shell); xdotool mousemove 960 1080; eval $original_pos; xdotool mousemove $X $Y
 
 Henkan_Mode
-  rofi -show window -theme configs/old-rofi-theme.rasi -config configs/rofi-conf.rasi
+  bspc node -f next.local.!hidden.window
 
 Hiragana_Katakana
-	bspc node -f next.local.!hidden.window
+  rofi -show window -theme configs/old-rofi-theme.rasi -config configs/rofi-conf.rasi
 
 Hangul_Hanja
   alacritty --config-file configs/alacritty.toml --working-directory ~
@@ -24,7 +27,7 @@ super + period
   rofimoji --hidden-descriptions --selector-args="-theme ~/.config/bspwm-gruvbox/configs/rofimoji.rasi"
 
 ctrl + alt + Delete
-  notify-send "Hibernate" "$(./hibernate)"
+  notify-send "Hibernate" "$(./scripts/hibernate.sh)"
 
 #super + @space
 #  dmenu_run -fn 'JetBrainsMonoNFM Thin-15' -b -p 'Open: '
@@ -43,7 +46,7 @@ XF86MonBrightness{Up,Down}
   brightnessctl set 20%{+,-}  
 
 XF86Audio{Raise,Lower}Volume
-  amixer -q sset Master 5%{+,-}
+  amixer -q sset Master 20%{+,-}
 
 XF86Display
   arandr
@@ -53,7 +56,7 @@ XF86AudioMute
 
 # quit/restart bspwm
 super + alt + {q,r}
-  bspc {quit,wm -r}
+  eval "{./scripts/quit.sh,bspc wm -r}"
 #	eval "{bspc quit,./reset-cooldown.sh}"
 
 # close and kill

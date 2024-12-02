@@ -4,23 +4,35 @@ ORIGINAL_DIR=$(pwd)
 cd $(dirname $0)
 
 xmodmap configs/xmodmap
+xinput set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" 0
 
 pgrep -x sxhkd > /dev/null || sxhkd -c sxhkdrc . &
 
+if [[ -f "./cache/session_layout.log" && -f "./cache/session_apps.log" ]]; then
+#  bspc wm -r < cache/session_layout.log
+
+  while read -r app; do
+      nohup $app &
+  done < cache/session_apps.log
+fi
+
+bspc rule -a gammy desktop='^5'
+
 if grep -q "disconnected" /sys/class/drm/card1-HDMI-A-1/status; then
-  bspc rule -a gammy desktop='^5'
   bspc monitor eDP-1 -d I II III IV V
+  bspc monitor HDMI-1 -r
+  xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --off
   gammy & disown
 else
-  bspc rule -a gammy desktop='^6'
   bspc monitor HDMI-1 -d I II III
-  bspc monitor eDP-1 -d VI V VI
+  bspc monitor eDP-1 -d VI V
   xrandr --output eDP-1 --mode 1920x1080 --rate 60.01 --pos 1920x0 --rotate normal --output DP-1 --off --output HDMI-1 --primary --mode 1920x1080 --rate 100.00 --pos 0x0 --rotate normal --output DP-2 --off --output HDMI-2 --off
+  pkill gammy
 fi
 
 
-bspc config border_width        0
-bspc config window_gap          30
+bspc config border_width        1
+bspc config window_gap          20
 
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
@@ -30,6 +42,7 @@ bspc config focus_follows_pointer true
 
 bspc rule -a Plank manage=on border=off locked=on focus=off follow=off
 
+bspc rule -a zenity state=floating
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
 #bspc rule -a Chromium desktop='^2'picom animations arch linux package
 #bspc rule -a mplayer2 state=floating
@@ -37,11 +50,10 @@ bspc rule -a Plank manage=on border=off locked=on focus=off follow=off
 #bspc rule -a Screenkey manage=off
 bspc rule -a tint2 layer=above sticky=on
 
-feh --no-fehbg --bg-fill wallpapers/15.jpg
+feh --no-fehbg --bg-fill wallpapers/13.jpg
 picom --config configs/picom.conf &
 
 killall polybar
-
 
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
@@ -52,7 +64,7 @@ else
 fi
 
 killall tint2
-tint2 -c configs/tint2rc & disown
+#tint2 -c configs/tint2rc & disown
 
 
 #pkill tint2
