@@ -1,14 +1,26 @@
 #!/bin/sh
 
 if ! ip link list | grep -q "wwan0"; then
-  PASSWORD=$(zenity --password --timeout=5 --title="Authentication Required To Turn On LTE")
-
-  if [ -z "$PASSWORD" ]; then
-    echo "UNLOADED"
-    exit
-  fi
-
-  echo $PASSWORD | sudo -S modprobe xmm7360
+  # if ! lsmod | grep "xmm7360" &> /dev/null ; then
+    # pkill zenity
+    # PASSWORD=$(zenity --password --timeout=5 --title="Authentication Required To Turn On LTE")
+    #
+    # if [ -z "$PASSWORD" ]; then
+    #   echo "UNLOADED"
+    #   exit
+    # fi
+    #
+    # echo "$PASSWORD" | su -c "echo 'Yea'" -s /bin/bash "root"
+    #
+    # if [ $? -ne 0 ]; then
+    #   echo "Incorrect password"
+    # else
+    #   echo $PASSWORD | sudo -S modprobe xmm7360
+    # fi
+  # else
+    # echo "BROKEN"
+  # fi
+  echo "BROKEN"
 fi
 
 state=$(ip link show wwan0 | awk '/state/ {print $9}')
