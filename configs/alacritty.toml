@@ -37,6 +37,6 @@ size = 14.0
 family = "JetBrainsMonoNFM"
 
 [window]
-opacity = 1.0
+opacity = 0.9
 startup_mode = 'Maximized'
 # padding = { x = 5 , y = 5 }

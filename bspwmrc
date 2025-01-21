@@ -1,32 +1,36 @@
 #! /bin/sh
 
+/usr/lib/xdg-desktop-portal-gtk & disown
+ibus-daemon -rxRd
+
 ORIGINAL_DIR=$(pwd)
 cd $(dirname $0)
 
 xmodmap configs/xmodmap
-xinput set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" 0
+xinput set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" 1
 
 pgrep -x sxhkd > /dev/null || sxhkd -c sxhkdrc . &
 
-if [[ -f "./cache/session_layout.log" && -f "./cache/session_apps.log" ]]; then
-#  bspc wm -r < cache/session_layout.log
-
-  while read -r app; do
-      nohup $app &
-  done < cache/session_apps.log
-fi
+# if [[ -f "./cache/session_layout.log" && -f "./cache/session_apps.log" ]]; then
+# #  bspc wm -r < cache/session_layout.log
+#
+#   while read -r app; do
+#       nohup $app &
+#   done < cache/session_apps.log
+# fi
 
 bspc rule -a gammy desktop='^5'
 
 if grep -q "disconnected" /sys/class/drm/card1-HDMI-A-1/status; then
-  bspc monitor eDP-1 -d I II III IV V
-  bspc monitor HDMI-1 -r
-  xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --off
+  bspc monitor HDMI1 -r
+  bspc monitor eDP1 -d I II III IV V
+  xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI1 --off --output DP-2 --off --output HDMI-2 --off
   gammy & disown
 else
-  bspc monitor HDMI-1 -d I II III
-  bspc monitor eDP-1 -d VI V
-  xrandr --output eDP-1 --mode 1920x1080 --rate 60.01 --pos 1920x0 --rotate normal --output DP-1 --off --output HDMI-1 --primary --mode 1920x1080 --rate 100.00 --pos 0x0 --rotate normal --output DP-2 --off --output HDMI-2 --off
+  bspc monitor eDP1 -d I II III IV V
+  bspc monitor HDMI1 -d VI
+xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --off --output DP2 --off --output HDMI1 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI2 --off --output VIRTUAL1 --off
+  # xrandr --output eDP1 --mode 1920x1080 --rate 60.01 --pos 1920x0 --rotate normal --output DP-1 --off --output HDMI1 --primary --mode 1920x1080 --rate 100.00 --pos 0x0 --rotate normal --output DP-2 --off --output HDMI-2 --off
   pkill gammy
 fi
 
@@ -50,7 +54,7 @@ bspc rule -a zenity state=floating
 #bspc rule -a Screenkey manage=off
 bspc rule -a tint2 layer=above sticky=on
 
-feh --no-fehbg --bg-fill wallpapers/13.jpg
+feh --no-fehbg --bg-fill wallpapers/9.jpg
 picom --config configs/picom.conf &
 
 killall polybar
